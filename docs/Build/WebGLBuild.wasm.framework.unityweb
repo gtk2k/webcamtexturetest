@@ -13827,8 +13827,8 @@ function _glTexImage2D(target, level, internalFormat, width, height, border, for
   return;
  }
  var pixelData = null;
- //if (pixels) pixelData = emscriptenWebGLGetTexPixelData(type, format, width, height, pixels, internalFormat);
- //GLctx.texImage2D(target, level, internalFormat, width, height, border, format, type, pixelData);
+ if (pixels) pixelData = emscriptenWebGLGetTexPixelData(type, format, width, height, pixels, internalFormat);
+ GLctx.texImage2D(target, level, internalFormat, width, height, border, format, type, pixelData);
 }
 function _glTexImage3D(target, level, internalFormat, width, height, depth, border, format, type, pixels) {
  if (GLctx.currentPixelUnpackBufferBinding) {
