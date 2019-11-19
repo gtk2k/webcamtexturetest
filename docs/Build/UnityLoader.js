@@ -713,7 +713,7 @@ var UnityLoader = UnityLoader || {
     return {
       width: screen.width ? screen.width : 0,
       height: screen.height ? screen.height : 0,
-      browser: browser,
+      browser: "Chrome",
       browserVersion: version,
       mobile: mobile,
       os: os,
