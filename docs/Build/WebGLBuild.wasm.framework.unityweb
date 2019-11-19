@@ -3897,6 +3897,7 @@ function _JS_WebCamVideo_GrabFrame(deviceId, buffer, destWidth, destHeight) {
  }
 }
 function _JS_WebCamVideo_Start(deviceId) {
+  debugger;
  if (MediaDevices[deviceId].video) {
   MediaDevices[deviceId].refCount++;
   return;
