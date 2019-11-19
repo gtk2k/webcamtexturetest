@@ -3,6 +3,7 @@ var UnityModule = (function() {
   var _scriptDir = typeof document !== 'undefined' && document.currentScript ? document.currentScript.src : undefined;
   return (
 function(UnityModule) {
+  debugger;
   UnityModule = UnityModule || {};
 
 var Module = typeof UnityModule !== "undefined" ? UnityModule : {};
