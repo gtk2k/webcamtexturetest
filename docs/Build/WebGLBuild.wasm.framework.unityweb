@@ -13827,6 +13827,7 @@ function _glTexImage2D(target, level, internalFormat, width, height, border, for
   return;
  }
  var pixelData = null;
+ console.log(type, internalFormat);
  if (pixels) pixelData = emscriptenWebGLGetTexPixelData(type, format, width, height, pixels, internalFormat);
  GLctx.texImage2D(target, level, internalFormat, width, height, border, format, type, pixelData);
 }
