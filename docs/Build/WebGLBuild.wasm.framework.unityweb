@@ -3866,6 +3866,7 @@ function _JS_WebCamVideo_CanPlay(deviceId) {
  return MediaDevices[deviceId].video && MediaDevices[deviceId].video.videoWidth > 0 && MediaDevices[deviceId].video.videoHeight > 0;
 }
 function _JS_WebCamVideo_GetDeviceName(deviceId, buffer, bufferSize) {
+  console.log('_JS_WebCamVideo_GetDeviceName');
  if (buffer) stringToUTF8(MediaDevices[deviceId].deviceName, buffer, bufferSize);
  return lengthBytesUTF8(MediaDevices[deviceId].deviceName);
 }
