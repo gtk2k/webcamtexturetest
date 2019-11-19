@@ -26413,9 +26413,9 @@ Module["callMain"] = function callMain(args) {
 function run(args) {
   debugger;
  args = args || Module["arguments"];
- if (runDependencies > 0) {
-  return;
- }
+// if (runDependencies > 0) {
+//  return;
+// }
  writeStackCookie();
  preRun();
  if (runDependencies > 0) return;
